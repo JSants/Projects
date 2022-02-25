@@ -1,14 +1,14 @@
 Select *
-From prem.goalscorers;
+From prem.goalscorers2;
 
 -- Looking at the games played vs the goals scored
 Select PLAYER, TEAM, GP, G, (G/GP) as GoalsPerGame
-From prem.goalscorers
+From prem.goalscorers2
 order by 5 DESC;
 
 -- Looking at the games started vs the goals scored
 Select PLAYER, TEAM, GS, G, (G/GS) as GoalsPerStart
-From prem.goalscorers
+From prem.goalscorers2
 order by 5 DESC;
 
 -- Looking at the minutes vs goals scored
